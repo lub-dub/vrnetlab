@@ -50,7 +50,7 @@ class VJUNOSSWITCH_vm(vrnetlab.VM):
             disk_image=disk_image,
             ram=5120,
             driveif="virtio",
-            cpu="IvyBridge,vme=on,ss=on,vmx=on,f16c=on,rdrand=on,hypervisor=on,arat=on,tsc-adjust=on,umip=on,arch-capabilities=on,pdpe1gb=on,skip-l1dfl-vmentry=on,pschange-mc-no=on,bmi1=off,avx2=off,bmi2=off,erms=off,invpcid=off,rdseed=off,adx=off,smap=off,xsaveopt=off,abm=off,svm=on",
+            cpu="host,vmx=on",
             smp="4,sockets=1,cores=4,threads=1",
         )
         # device hostname
